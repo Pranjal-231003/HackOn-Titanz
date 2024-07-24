@@ -24,7 +24,7 @@ const HomePage = () => {
               </p>
             </div>
             <div >
-              <button className="btn">Find your jobs</button>
+              <button className="btn" onClick={() => window.location.href = "/HiringPage"}>Find your jobs</button>
             </div>
           </div>
           <div className="Img_content">

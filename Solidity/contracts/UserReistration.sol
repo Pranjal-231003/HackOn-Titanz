@@ -15,7 +15,7 @@ contract UserRegistration {
 
     function registerUser(string memory _username, string memory _email) public {
         require(bytes(_username).length > 0, "Username is required");
-        require(bytes(_email).length > 0, "Email is reqired");
+        require(bytes(_email).length > 0, "Email is required");
 
         users[msg.sender] = User(msg.sender, _username, _email);
 

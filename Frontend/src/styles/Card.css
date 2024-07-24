@@ -1,0 +1,156 @@
+body{
+    overflow-y: scroll;
+    
+}
+.btn{
+    cursor:hover;
+}
+.card-container {
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    padding: 2rem 0;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: linear-gradient(180deg, rgb(0.79, 56.23, 73.74) 0%, rgba(3.16, 49.95, 70.01, 0.99) 99.99%); */
+    transition: all 0.1s ease;
+  }
+  .card-img {
+    position: relative;
+    transition: all 0.5s ease;
+    mix-blend-mode: lighten;
+    object-fit: cover;
+    width: 30%;
+  }
+  .title,
+  .card p {
+    width: 100%;
+    color: rgb(220, 220, 220);
+  }
+
+  .title {
+    /* background-color: #00000099; */
+    padding: 15px 0;
+    color: #00ffff;
+    font-family: "New Rocker-Regular";
+    font-size: 30px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    top: 0;
+  }
+
+
+
+  .card-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+  }
+  p.desc {
+    color: #ffffff;
+    font-family: "Scope One-Regular" ;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    line-height: normal;
+    opacity: 0.8;
+    text-align: center;
+    padding: 0 0.1rem;
+  }
+  
+  .corner-image {
+    position: absolute;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+    mix-blend-mode: soft-light;
+  }
+  
+  .top-left {
+    top: 0;
+    left: 0;
+    /* background-image: url('../images/tree.png'); */
+    transform: rotate(-90deg); 
+  }
+  
+  .top-right {
+    top: 0;
+    right: 0;
+    /* background-image: url('../images/tree.png'); */
+    
+  }
+  
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+    /* background-image: url('../images/tree.png'); */
+    transform: rotate(180deg); 
+  }
+  
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+    /* background-image: url('../images/tree.png'); */
+    transform: rotate(90deg); 
+  }
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5rem;
+    margin: 3% 5%;
+  }
+
+  .evh {
+    text-align: center;
+    padding: 1.3rem;
+    background: linear-gradient(90deg, #002358 0.02%, #000 98.61%);    color: #ffffff;
+    margin: 0;
+    font-family: Nico Moji;
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+
+
+
+  @media (max-width: 756px) {
+    .events-grid {
+      gap: 3rem;
+    }
+  
+  }
+  @media (max-width: 720px) {
+    p.desc{
+      font-size: 1.2em;
+    }
+    .events-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+   
+  }
+
+  @media (max-width: 600px) {
+    .events-grid {
+      width: 70%;
+      gap: 5rem;
+    }
+ 
+    .figures {
+      height: auto !important;
+    }
+    .about_box {
+      height: auto !important;
+    }
+  }

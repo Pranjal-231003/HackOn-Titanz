@@ -5,7 +5,8 @@ import HomePage from './components/HomePage';
 import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage';
 import Employers_Home from './components/Employers_Home';
-
+import ApplyPage from './components/ApplyPage';
+import HiringPage from './components/HiringPage';
 function App() {
   const [account, setAccount] = useState('');
   const [contractData, setContractData] = useState('');
@@ -64,6 +65,8 @@ function App() {
         <Route exact path="/signup" component={SignupPage} />
         <Route exact path="/" component={HomePage}/>
         <Route exact path="/Employers_Home" component={Employers_Home}/>
+        <Route exact path="/HiringPage" component={HiringPage}/>
+        <Route exact path="/ApplyPage" component={ApplyPage}/>
       </Switch>
     </Router>
   );

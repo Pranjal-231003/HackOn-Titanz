@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { web3, loadContract } from '../web3';
 import Card from "./Card";
 import Form from "./Form";
-import "../styles/ApplyPage.css";
+import "../styles/HiringPage.css";
 import Image from "../assets/Group 133.png";
 import { Link } from "react-router-dom";
 
@@ -92,7 +92,7 @@ const HiringPage = () => {
       {showForm && (
         <div className="overlay">
           <div className="form-container">
-            <button className="close-btn" onClick={handleCloseForm}>×</button>
+            <button className="close-btn" onClick={handleCloseForm}> x </button>
             <Form />
           </div>
         </div>

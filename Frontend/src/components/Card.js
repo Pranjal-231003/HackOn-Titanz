@@ -1,15 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Card.css";
-import Form from "./Form";
 import Image from "../assets/image 1.png";
 
-export default function Card({ title, description, requirements, salary, deadline }) {
-  const [showForm, setShowForm] = useState(false);
-
-  const handleApplyClick = () => {
-    setShowForm(true);
-  };
-
+export default function Card({ title, description, requirements, salary, deadline, handleApplyClick }) {
   return (
     <div className="card-container">
       <img alt="" className="card-img" src={Image} />
@@ -24,7 +17,6 @@ export default function Card({ title, description, requirements, salary, deadlin
         <p className="desc">{salary}</p>
         <p className="desc">{description}</p>
         <button type="button" className="btn" onClick={handleApplyClick}>Apply</button>
-        {showForm && <Form />}
       </div>
     </div>
   );

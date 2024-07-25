@@ -84,7 +84,7 @@ module.exports = {
     //
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
-    zkEVMCardona: {
+    cardona: {
       provider: () => new HDWalletProvider(MNEMONIC, 'https://rpc.cardona.zkevm-rpc.com'),
       network_id: '2442', // Polygon zkEVM Cardona Testnet ID
       gas: 5500000, // Gas limit
